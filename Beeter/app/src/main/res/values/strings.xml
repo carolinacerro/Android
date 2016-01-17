@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Beeter</string>
+    
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_stings_list">StingsListActivity</string>
+    <string name="title_activity_sting_detail">StingDetailActivity</string>
+    <string name="l_subject">Subject</string>
+    <string name="l_content">Content</string>
+    <string name="lb_cancel">Cancel</string>
+    <string name="lb_send">Send</string>
+    <string name="l_post">Post</string>
+</resources>
