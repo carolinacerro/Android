@@ -21,7 +21,7 @@ import edu.upc.eetac.dsa.beeter.client.entity.Link;
 import edu.upc.eetac.dsa.beeter.client.entity.Root;
 
 /**
- * Created by  on 17/01/16.
+ * Created by  Carolina on 17/01/16.
  */
 public class BeeterClient {
 

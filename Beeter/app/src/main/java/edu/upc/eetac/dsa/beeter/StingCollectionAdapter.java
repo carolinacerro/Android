@@ -52,12 +52,12 @@ public class StingCollectionAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        String userid = stingCollection.getStings().get(position).getUserid();
+        String creator = stingCollection.getStings().get(position).getCreator();
         String subject = stingCollection.getStings().get(position).getSubject();
         Long date = stingCollection.getStings().get(position).getCreationTimestamp();
         String sdate = String.valueOf(date);
 
-        viewHolder.textViewCreator.setText(userid);
+        viewHolder.textViewCreator.setText(creator);
         viewHolder.textViewSubject.setText(subject);
         viewHolder.textViewDate.setText(sdate);
         return convertView;
@@ -70,7 +70,7 @@ public class StingCollectionAdapter extends BaseAdapter {
 
         ViewHolder(View row){
             this.textViewCreator = (TextView) row
-                    .findViewById(R.id.textUsername);
+                    .findViewById(R.id.textID);
             this.textViewSubject = (TextView) row
                     .findViewById(R.id.textsubject);
             this.textViewDate = (TextView) row
