@@ -21,11 +21,11 @@ import edu.upc.eetac.dsa.beeter.client.entity.Link;
 import edu.upc.eetac.dsa.beeter.client.entity.Root;
 
 /**
- * Created by  Carolina on 17/01/16.
+ * Created by  Caroon 17/01/16.
  */
 public class BeeterClient {
 
-    private final static String BASE_URI = "http://192.168.0.165:8080/beeter";
+    private final static String BASE_URI = "http://10.83.29.244:8080/beeter";
     private static BeeterClient instance;
     private Root root;
     private ClientConfig clientConfig = null;

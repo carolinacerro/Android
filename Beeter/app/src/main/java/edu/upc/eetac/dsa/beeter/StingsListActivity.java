@@ -54,10 +54,8 @@ public class StingsListActivity extends AppCompatActivity {
             for(Sting sting : stingCollection.getStings()){
                 stings.getStings().add(stings.getStings().size(), sting);
             }
-            //adapter.notifyDataSetChanged();
+            // adapter.notifyDataSetChanged();
         }
-
-
     }
 
 
@@ -78,17 +76,6 @@ public class StingsListActivity extends AppCompatActivity {
         StingCollectionAdapter  adapter = new StingCollectionAdapter(this, stings);
         list.setAdapter(adapter);
 
-        // set list OnItemClick listener
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(StingsListActivity.this, StingDetailActivity.class);
-                String uri = BeeterClient.getLink(stings.getStings().get(position).getLinks(), "self").getUri().toString();
-                intent.putExtra("uri", uri);
-                startActivity(intent);
-            }
-        });
-
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -97,6 +84,14 @@ public class StingsListActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+
+        // set list OnItemClick listener
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Log.d(TAG, BeeterClient.getLink(stings.getStings().get(position).getLinks(), "self").getUri().toString());
             }
         });
     }

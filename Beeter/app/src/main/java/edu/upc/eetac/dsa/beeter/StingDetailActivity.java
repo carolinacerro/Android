@@ -7,7 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import edu.upc.eetac.dsa.beeter.client.entity.StingCollection;
+
 public class StingDetailActivity extends AppCompatActivity {
+
+    private final static String TAG = StingsListActivity.class.toString();
+    private StingCollection stings = new StingCollection();
+    private StingCollectionAdapter  adapter = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,5 +31,6 @@ public class StingDetailActivity extends AppCompatActivity {
             }
         });
     }
+    }
 
-}
+
